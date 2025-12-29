@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoboek Reveal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is the background image container -->
+    <div class="background"></div>
+    
+    <!-- This container holds the countdown timer and hidden content -->
+    <div class="container">
+        <!-- The countdown timer display -->
+        <div class="timer-box">
+            <h1 id="timer">Loading...</h1>
+            <p class="timer-label">Nog eventjes wachten...</p>
+        </div>
+        
+        <!-- This section is hidden until the timer finishes -->
+        <div id="reveal-content" class="reveal-content hidden">
+            <h2>🎉 Het is zover!</h2>
+            <p>Klik hier om het fotoboek te bekijken:</p>
+            <a href="https://www.albelli.be/onlinefotoboek-bekijken?widgetId=2ceb28f8-e221-4f57-848d-ada34a808885&securityId=e075b317-9e5b-4767-93bd-f8731473956e" 
+               class="reveal-button" target="_blank">
+                Bekijk het fotoboek
+            </a>
+        </div>
+    </div>
+    
+    <!-- This loads our JavaScript file that makes the timer work -->
+    <script src="script.js"></script>
+</body>
+</html>
