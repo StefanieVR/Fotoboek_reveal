@@ -2,7 +2,7 @@
 function startCountdown() {
     // Set the target time: December 30, 2025 at 19:30 UTC+1
     // We need to create a date in your timezone (UTC+1, which is Central European Time)
-    const targetDate = new Date('2025-12-29T12:30:00+01:00');
+    const targetDate = new Date('2025-12-29T13:32:00+01:00');
     
     // This function updates the timer every second
     function updateTimer() {
