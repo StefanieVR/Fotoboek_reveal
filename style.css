@@ -73,6 +73,9 @@ body {
     text-align: center;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     animation: slideUp 0.8s ease-out;
+    max-width: 1400px;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .reveal-content h2 {
@@ -87,25 +90,26 @@ body {
     margin-bottom: 30px;
 }
 
-/* The button that appears with the reveal content */
-.reveal-button {
-    display: inline-block;
-    background-color: #ff6b6b;
-    color: white;
-    padding: 18px 40px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+/* Styling for the embedded iframe */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.67%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
-.reveal-button:hover {
-    background-color: #ff5252;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
 }
+
 
 /* Hidden class - used to hide the timer and show reveal content */
 .hidden {
@@ -150,7 +154,8 @@ body {
     }
 
     .reveal-content {
-        padding: 40px 50px;
+        padding: 30px 20px;
+        max-width: 95vw;
     }
 
     .reveal-content h2 {
@@ -159,10 +164,6 @@ body {
 
     .reveal-content p {
         font-size: 16px;
-    }
-
-    .reveal-button {
-        padding: 14px 30px;
-        font-size: 16px;
+        margin-bottom: 20px;
     }
 }
